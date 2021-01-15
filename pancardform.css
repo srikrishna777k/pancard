@@ -1,0 +1,689 @@
+*{  
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFDD;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: maroon;
+}
+
+header p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    background-color:inherit
+}
+
+header p:first-of-type{
+  font-weight: bold;
+}
+
+header p:last-of-type{
+    font-style: italic;
+}
+
+header p span:first-of-type{
+    color: red;
+    background-color:inherit
+}
+
+header p span:nth-of-type(2),header p span:nth-of-type(3){
+    color: orange;
+    text-decoration: underline;
+    background-color:inherit
+}
+
+.tablestyle1{
+    /* width: 62%; */
+    width: 62vw;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-bottom: 0px;
+    border-top:0px;
+}
+
+.tablestyle1 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tablestyle1 td:last-of-type{
+    border-bottom:0px;
+}
+
+.tablestyle1 td:nth-last-of-type(2){
+    border-bottom:0px;
+}
+
+.tablestyle1 tr td:first-of-type{
+    /* width: 50px; */
+    /* width: 3%; */
+    width: 2vw;
+}
+
+.tablestyle1 td{
+    height: 22px;
+}
+
+td *{
+    vertical-align: middle;
+}
+
+/* tr td:first-of-type{
+    vertical-align: baseline;
+} */
+
+
+
+fieldset{
+    border: none;
+}
+
+legend{
+    float: left;
+    margin-right: 50px;
+    font-weight: bold;
+    
+}
+
+fieldset input{
+    margin-right: 20px;
+}
+
+.Citizen fieldset legend::before{
+    content: "* ";
+    color: red;
+}
+
+.PAN label::before{
+    content: "* ";
+    color: red; 
+}
+
+.PAN label{
+    font-weight: bold;
+}
+
+input[type=checkbox]{
+    margin-left: 5px;
+    height: 20px;
+}
+
+input[type=text]{
+    height: 21px;
+    background-color: white;
+    border: groove 2px;
+    padding: 1px;
+    /* margin-left: 1px; */
+}
+
+
+.Name span::before{
+    content: "* ";
+    color: red; 
+}
+
+.Name span{
+    font-weight: bold;
+}
+
+.Title legend{
+    margin-right: 20px;
+}
+
+.Title span{
+    color: rgb(195, 194, 194);
+}
+
+.namedet div{
+    display: inline-block;
+    /* margin-right: 300px; */
+    /* margin-right: 12vw; */
+    margin-right: 20%;
+}
+
+.namedet div:last-of-type{
+    margin-right: 0px;
+}
+
+
+.namedet label{
+    display: block;
+    font-weight: bold;
+}
+
+.Nameprint label{
+    font-weight: bold;
+}
+
+.Nameprint label::before{
+    content: "* ";
+    color: red; 
+}
+
+.Nameprint input{
+    width: 400px;
+}
+
+.Parentdetails td {
+    height: 18px;
+}
+
+.parentdet span:first-of-type{
+    font-weight: bold;
+}
+
+.tablestyle2{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+    
+.tablestyle2 tr td:first-of-type{
+        /* width: 50px; */
+        width: 2vw;
+}
+    
+.tablestyle2 tr td:nth-of-type(2){
+    /* width: 730px; */
+    /* width: 30%; */
+    width: 30vw;
+}
+    
+.tablestyle2,td{
+    border: 1px solid black;
+    border-collapse: collapse; 
+}
+    
+.tablestyle2 td{
+    height: 22px;
+}
+
+.Mother span{
+    font-weight: bold;
+}
+
+.Father_name td{
+    border-top:0px;
+}
+
+.Father_name span:first-of-type{
+    font-weight: bold;
+}
+
+.Father_name span:first-of-type::before{
+    content: "* ";
+    color: red; 
+}
+
+.tablestyle3{
+    width: 62vw;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-bottom: 0px;
+    border-top:0px;
+}
+
+.tablestyle3 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tablestyle3 td:last-of-type{
+    border-bottom:0px;
+}
+
+.tablestyle3 td:nth-last-of-type(2){
+    border-bottom:0px;
+}
+
+.tablestyle3 td:nth-last-of-type(3){
+    border-bottom:0px;
+}
+
+.tablestyle3 tr td:first-of-type{
+    /* width: 50px; */
+    width: 2vw;
+}
+
+.tablestyle3 tr td:nth-of-type(2){
+    /* width: 730px; */
+    /* width: 48.4%; */
+    width: 30vw;
+}
+  
+.tablestyle3 td{
+    height: 22px;
+}
+
+.Sel_name p{
+    font-weight: bold;
+}
+
+.Sel_name p::before{
+    content: "* ";
+    color: red;  
+}
+
+.DOB p{
+    font-weight: bold;
+}
+
+.DOB p:first-of-type::before{
+    content: "* ";
+    color: red;  
+}
+
+.dobdet div{
+    display: inline-block;
+}
+
+.dobdet label, .countrycode label{
+    display: block;
+}
+
+select, option{
+    background-color: white;
+    border: groove 2px;
+}
+
+.dobdet input[type=text]{
+    width: 60px;
+}
+
+.gender span{
+    font-weight: bold;
+}
+
+.gender span::before{
+    content: "* ";
+    color: red;  
+}
+
+.photo td{
+    border-top:0px;
+}
+
+.photo span, .sign span{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.address span{
+    font-weight: bold;
+}
+
+.address span::before{
+    content: "* ";
+    color: red;  
+}
+
+.office label, .flat label, .building label, .road label, .area label,.town label,.state label, .PIN label, .country label, .ZIP label, .other p{
+    font-weight: bold;
+}
+
+.office span, .PIN span{
+    font-style: italic;
+}
+
+.office input{
+    width: 250px;
+}
+
+.flat input, .building input, .road input, .area input{
+    width: 200px;
+}
+
+.PIN input, .town input, .ZIP input{
+    width: 150px;
+}
+
+.other span{
+    text-decoration: underline;
+}
+
+.innertable1{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-bottom: 0px;
+    /* border-top:0px; */
+}
+
+.innertable2{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-bottom: 0px; */
+    /* border-top:0px; */
+}
+
+.innertable1 td, .innertable2 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.innertable2 tr td:first-of-type{
+    width: 65%;
+}
+
+.telephone input[type=radio], .incase input[type=radio]{
+    margin-left: 5px;
+}
+
+/* .innertable1 td:last-of-type{
+    border-bottom:0px;
+}
+
+.innertable1 td:nth-last-of-type(2){
+    border-bottom:0px;
+}
+
+.innertable1 tr td:first-of-type{
+    width: 50px;
+}
+
+.innertable1 td{
+    height: 22px;
+} */
+
+.innertele label{
+    display: block;
+}
+
+.innertele input[type=text]{
+    width: 150px;
+}
+
+.telephone p, .email label, .aadno label, .gstn label{
+    font-weight: bold;
+}
+
+.telephone p::before, .aadno label::before{
+    content: "* ";
+    color: red;  
+}
+
+.email input[type=text]{
+    width: 300px;
+}
+
+.aadno p{
+    font-weight: bold;
+    font-style: italic;
+    color: darkblue;
+}
+
+.nameaad p:first-of-type::before{
+    content: "* ";
+    color: red; 
+}
+
+.nameaad input[type=text]{
+    /* width: 700px; */
+    width: 30vw;
+}
+
+.gst td{
+    border-top: 0px;
+}
+
+.gst input{
+    width:150px;
+}
+
+.mention span:first-of-type{
+    font-weight: bold;
+}
+
+.mention span:last-of-type{
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.panno label{
+    font-weight: bold;
+}
+
+.verification span{
+    font-weight: bold;
+}
+
+.ver input[type=text]:first-of-type{
+    width: 615px;
+}
+
+.ver input[type=text]:last-of-type{
+    width: 50px;
+}
+
+.place input{
+    width: 250px;
+    margin-left: 20px;
+}
+
+
+.tablestyle4{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+    
+.tablestyle4 tr td:first-of-type{
+        width: 2vw;
+}
+    
+.tablestyle4,td{
+    border: 1px solid black;
+    border-collapse: collapse; 
+}
+    
+.tablestyle4 td{
+    height: 22px;
+}
+
+.verat td{
+    border-top:0px;
+}
+
+.verat div{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.epan fieldset{
+    display: inline-block;
+}
+
+.epan fieldset input{
+    margin-right: 5px;
+}
+
+.epan fieldset label{
+    margin-right: 30px;
+}
+
+.epan span:last-of-type{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.otherdet span, .deposit span, .paydet span{
+    font-weight: bold;
+}
+
+.otherdet td, .deposit td, .paydet td, .onlinepay td{
+    height: 18px;
+}
+
+.onlinepay label{
+    font-weight: bold;
+}
+
+.tablestyle1 .onlinepay td{
+    border-bottom:1px solid black;
+}
+
+.paperless {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.paperless legend{
+    font-weight: normal;
+    font-size: 17px;
+    margin-right: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paperless input{
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+
+.dsc input{
+    margin-left: 5px;
+}
+
+.dsc select{
+    width: 200px;
+    margin-right: 10px;
+}
+
+.dsc a:hover{
+    color: rgb(6, 112, 6);
+    text-decoration: none;
+}
+
+.onlinepay input[type=radio]{
+    margin-left: 5px;
+}
+
+hr{
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+.finupload{
+    margin-top: 20px;
+
+}
+
+.innerupload input{
+    width: 200px;
+}
+
+.innerupload textarea{
+    width: 250px;
+    height: 100px;
+}
+
+.innerupload:last-of-type{
+    height: 100px;
+}
+
+.innerupload span{
+    display: inline-block;
+    width: 300px;
+    margin-right: 30%;
+    margin-bottom: 10px;
+}
+
+.innerupload{
+    display: flex;
+    align-items: center;
+}
+
+textarea{
+    background-color: white;
+}
+
+#digilocker{
+    background-color:rgb(240, 237, 237);
+    border: ridge 1px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#digilocker span{
+    background-color:rgb(240, 237, 237);
+}
+
+#digilocker:hover{
+    font-size: 15px;
+}
+
+input[type=Submit]{
+    display: block;
+    margin: 1px auto;
+    padding:2px 5px;
+    background-color: rgb(235, 234, 234);
+    border: 1px solid;
+}
+
+input[type=Submit]:hover{
+    background-color: lightgrey;
+}
+
+main{
+    margin-bottom: 20px;
+}
+
+.table5{
+    width: 100%;
+}
+
+.table5 tr td{
+    border: none;
+}
+
+.table5 tr td:first-of-type{
+    width: 37%;
+}
+
+.table5 tr td:nth-of-type(2){
+    width: 23%;
+}
+
+.table5 tr td:nth-of-type(3){
+    width: 10%;
+}
+
+.Nameprint span, .parentdet span:last-of-type, .Father_name span:last-of-type, .Mother_name span, .Sel_name span{
+    color: darkgreen;
+    animation:blinkings 1s infinite;
+    }
+    @keyframes blinkings{
+    0%{   color: darkgreen;   }
+    47%{   color: darkgreen; }
+    62%{   color: blue; }
+    97%{   color:blue; }
+    100%{  color:blue;   }
+    }
+
+@media only screen and (max-width:1920px){
+    .tablestyle1,.tablestyle3{
+        width: 62vw;
+        width: 1200px; 
+    }
+
+    .tablestyle2 tr td:nth-of-type(2),.tablestyle3 tr td:nth-of-type(2){
+        width: 560px;
+    }
+
+    .nameaad input[type=text]{
+        width: 600px;
+        /* width: 30vw; */
+    }
+    
+}

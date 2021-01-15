@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pancardform.css">
+</head>
+<body>
+    <header>
+        <p>Request For New Pan Card Or/And Changes Or Correction in PAN Data</p>
+        <p>Fields marked with <span>*</span> (asterisk) are mandatory. To avoid mistake(s), please refer <span>guidelines</span> and <span>instructions</span></p>
+    </header>
+
+    <main>
+     <form action="">
+         <table class="tablestyle1">
+               <tr class="Citizen">
+                   <td></td>
+                   <td>
+                       <fieldset>
+                            <legend>Whether citizen of India</legend>  
+                            <label for="citiyes">Yes</label> 
+                            <input type="radio" id="citiyes" name="citizen" value="yes">
+                            <label for="citino">No</label> 
+                            <input type="radio" id="citino" name="citizen" value="no">
+                       </fieldset>
+                   </td>
+               </tr> 
+
+               <tr class="PAN">
+                    <td></td>
+                    <td>
+                        <label for="pan">Permanent Account Number (PAN)</label>   
+                        <input type="text" id="pan" name="panno">
+                    </td>
+               </tr>
+
+               <tr class="Name">
+                   <td>
+                    <input type="checkbox" name="name" id="nameid">
+                   </td>
+                   <td>
+                       <span>1. Name</span>
+                   </td>
+               </tr>
+
+               <tr class="Title">
+                   <td></td>
+                   <td>
+                    <fieldset>
+                        <legend>Title</legend>  
+                        <label for="shri">Shri/Mr</label> 
+                        <input type="radio" id="shri" name="title" value="shri">
+                        <label for="smt">Smt./Mrs.</label> 
+                        <input type="radio" id="smt" name="title" value="smt">
+                        <label for="ms">Kumari/Ms</label> 
+                        <input type="radio" id="ms" name="title" value="ms">
+                        <span>M/s</span>
+                   </fieldset>
+                   </td>
+               </tr>
+
+               <tr class="Namedetails">
+                   <td></td>
+                   <td class="namedet">
+                       <div class="last-name">
+                           <label for="lastnamefat">Last Name/Surname</label>
+                           <input type="text" id="lastnamefat" name="lastname"> 
+                       </div>
+                       <div class="first-name">
+                            <label for="firstnamefat">First Name</label>
+                            <input type="text" id="firstnamefat" name="firstname"> 
+                        </div>
+                        <div class="middle-name">
+                            <label for="middlenamefat">Middle Name</label>
+                            <input type="text" id="middlenamefat" name="middlename"> 
+                        </div>
+                   </td>
+               </tr>
+
+               <tr class="Nameprint">
+                    <td></td>
+                    <td>
+                        <div>
+                            <label for="nameprint">Name as you would like it printed on the card</label>
+                            <span>(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)
+                            </span>
+                        </div>
+                        <input type="text" id="nameprint" name="name">
+                    </td>
+               </tr>
+
+               <tr class="Parentdetails">
+                   <td></td>
+                   <td class="parentdet">
+                       <span>Details of Parents.</span>
+                       <span>(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed.)</span>
+                   </td>
+               </tr>
+            </table>
+            <table class="tablestyle2">
+               <tr class="Mother">
+                   <td></td>
+                   <td>
+                      <span>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</span>  
+                   </td>
+                   <td>
+                       <fieldset>
+                            <label for="motyes">Yes</label> 
+                            <input type="radio" id="motyes" name="mother" value="yes">
+                            <label for="motno">No</label> 
+                            <input type="radio" id="motno" name="mother" value="no" checked> 
+                       </fieldset>
+                   </td>
+               </tr>
+            </table>
+
+            <table class="tablestyle1">
+                <tr class="Father_name">
+                    <td>
+                        <input type="checkbox" name="name" id="nameidfat">
+                    </td>
+                    <td>
+                        <span>Father's Name</span>
+                        <span>(Mandatory field. Even married women should give father's name only.)</span>
+                    </td>
+                </tr>
+
+                <tr class="Namedetails">
+                    <td></td>
+                    <td class="namedet">
+                        <div class="last-name">
+                            <label for="lastnamemom">Last Name/Surname</label>
+                            <input type="text" id="lastnamemom" name="lastname"> 
+                        </div>
+                        <div class="first-name">
+                             <label for="firstnamemom">First Name</label>
+                             <input type="text" id="firstnamemom" name="firstname"> 
+                         </div>
+                         <div class="middle-name">
+                             <label for="middlenamemom">Middle Name</label>
+                             <input type="text" id="middlenamemom" name="middlename"> 
+                         </div>
+                    </td>
+                </tr>
+
+                <tr class="Mother_name">
+                    <td>
+                        <input type="checkbox" name="name" id="nameidmom">
+                    </td>
+                    <td>
+                        <span>Mother's Name(This field is optional.)</span>
+                    </td>
+                </tr>
+
+                <tr class="Namedetails">
+                    <td></td>
+                    <td class="namedet">
+                        <div class="last-name">
+                            <label for="lastname">Last Name/Surname</label>
+                            <input type="text" id="lastname" name="lastname"> 
+                        </div>
+                        <div class="first-name">
+                             <label for="firstname">First Name</label>
+                             <input type="text" id="firstname" name="firstname"> 
+                         </div>
+                         <div class="middle-name">
+                             <label for="middlename">Middle Name</label>
+                             <input type="text" id="middlename" name="middlename"> 
+                         </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle3">
+                <tr class="Sel_name">
+                    <td></td>
+                    <td><p>4. Select Parent name which is to be printed on the card</p>
+                    <span>(In case no option is provided then PAN card will be issued with father's name)</span>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="fatname">Father Name</label> 
+                            <input type="radio" id="fatname" name="parent" value="father" checked>
+                            <label for="momname">Mother Name</label> 
+                            <input type="radio" id="momname" name="parent" value="mother"> 
+                       </fieldset>                       
+                    </td>
+                </tr>
+
+                <tr class="Dateofbirth">
+                    <td>
+                        <input type="checkbox" name="name" id="dobid">
+                    </td>
+                    <td class="DOB">
+                        <p>5. Date of Birth/Incorporation/Agreement/Partnership</p>
+                        <p>or Trust Deed/Formation of Body of Individuals/</p>
+                        <p>Association of Persons</p>
+                    </td>
+                    <td class="dobdet">
+                        <div class="day">
+                            <label for="day">DD</label>
+                            <select name="day" id="day">
+                                <option value="DD">DD</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select> 
+                        </div>
+                        <div class="month">
+                             <label for="month">MM</label>
+                            <select name="month" id="month">
+                                <option value="MM">MM</option>
+                                <option value="JAN">JAN</option>
+                                <option value="FEB">FEB</option>
+                                <option value="MAR">MAR</option>
+                                <option value="APR">APR</option>
+                                <option value="MAY">MAY</option>
+                                <option value="JUN">JUN</option>
+                                <option value="JUL">JUL</option>
+                                <option value="AUG">AUG</option>
+                                <option value="SEP">SEP</option>
+                                <option value="OCT">OCT</option>
+                                <option value="NOV">NOV</option>
+                                <option value="DEC">DEC</option>
+                            </select>
+                         </div>
+                         <div class="year">
+                             <label for="year">YYYY</label>
+                             <input type="text" id="year" name="year"> 
+                         </div>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table class="tablestyle2">
+                <tr class="gender">
+                    <td>
+                        <input type="checkbox" name="gender" id="genderid">
+                    </td>
+                    <td>
+                       <span>6. Gender</span>  
+                    </td>
+                    <td>
+                        <fieldset>
+                             <label for="male">Male</label> 
+                             <input type="radio" id="male" name="gender" value="male">
+                             <label for="female">Female</label> 
+                             <input type="radio" id="female" name="gender" value="female">
+                             <label for="trans">Transgender</label> 
+                             <input type="radio" id="trans" name="gender" value="trans">
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle1">
+                <tr class="photo">
+                    <td>
+                     <input type="checkbox" name="photo" id="photoid">
+                    </td>
+                    <td>
+                        <span>7. Photo Mismatch</span>
+                    </td>
+                </tr>
+
+                <tr class="sign">
+                    <td>
+                     <input type="checkbox" name="sign" id="signid">
+                    </td>
+                    <td>
+                        <span>8. Signature Mismatch</span>
+                    </td>
+                </tr>               
+            </table>
+
+            <table class="tablestyle3">
+                <tr class="address">
+                    <td>
+                        <input type="checkbox" name="address" id="addressid" checked>
+                    </td>
+                    <td><span>9. Address for Communication</span>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="resident">Residential</label> 
+                            <input type="radio" id="resident" name="address" value="resident">
+                            <label for="office">Office</label> 
+                            <input type="radio" id="office" name="address" value="office"> 
+                       </fieldset>                       
+                    </td>
+                </tr>
+
+                <tr class="office">
+                    <td></td>
+                    <td>
+                        <label for="officeid">Office Name</label>
+                        <span>(to be filled only in case of office address)</span>
+                    </td>
+                    <td>
+                        <input type="text" id="officeid" name="office">
+                    </td>
+                </tr>
+
+                <tr class="flat">
+                    <td></td>
+                    <td>
+                        <label for="flatid">Flat/Door/Block No.</label>
+                    </td>
+                    <td>
+                        <input type="text" id="flatid" name="flat">
+                    </td>
+                </tr>
+
+                <tr class="building">
+                    <td></td>
+                    <td>
+                        <label for="buildingid">Name of Premises/Building/Village</label>
+                    </td>
+                    <td>
+                        <input type="text" id="buildingid" name="building">
+                    </td>
+                </tr>
+
+                <tr class="road">
+                    <td></td>
+                    <td>
+                        <label for="roadid">Road/Street/Lane/Post Office</label>
+                    </td>
+                    <td>
+                        <input type="text" id="roadid" name="road">
+                    </td>
+                </tr>
+
+                <tr class="area">
+                    <td></td>
+                    <td>
+                        <label for="areaid">Area/Locality/Taluka/Sub-Division</label>
+                    </td>
+                    <td>
+                        <input type="text" id="areaid" name="area">
+                    </td>
+                </tr>
+
+                <tr class="town">
+                    <td></td>
+                    <td>
+                        <label for="townid">Town/City/District</label>
+                    </td>
+                    <td>
+                        <input type="text" id="townid" name="town">
+                    </td>
+                </tr>
+
+                <tr class="state">
+                    <td></td>
+                    <td>
+                        <label for="stateid">State/Union Territory</label>
+                    </td>
+                    <td>
+                        <select name="state" id="stateid">
+                            <option value="Please Select">-- Please Select --</option>
+                            <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadara & Nagar Haveli">Dadara & Nagar Haveli</option>
+                            <option value="Daman & Diu">Daman & Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu & kashmir">Jammu & kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Lakshwadeep">Lakshwadeep</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Orissa">Orissa</option>
+                            <option value="Pondicherry">Pondicherry</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Prades</option>
+                            <option value="Uttaranchal">Uttaranchal</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Outside India">Outside India</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="PIN">
+                    <td></td>
+                    <td>
+                        <label for="pinid">PIN</label>
+                        <span>(Indicating PIN is mandatory)</span>
+                    </td>
+                    <td>
+                        <input type="text" id="pinid" name="pin">
+                    </td>
+                </tr>
+
+                <tr class="country">
+                    <td></td>
+                    <td>
+                        <label for="countryid">Country</label>
+                    </td>
+                    <td>
+                        <select id="countryid" name="country">
+                            <option value="Please Select">-- Please Select --</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bonaire">Bonaire</option>
+                            <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Canary Islands">Canary Islands</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Channel Islands">Channel Islands</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos Island">Cocos Island</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote DIvoire">Cote DIvoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curaco">Curacao</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="East Timor">East Timor</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands">Falkland Islands</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Ter">French Southern Ter</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Great Britain">Great Britain</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="India">India</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea North">Korea North</option>
+                            <option value="Korea Sout">Korea South</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macau">Macau</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Midway Islands">Midway Islands</option>
+                            <option value="Moldova">Moldova</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Nambia">Nambia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherland Antilles">Netherland Antilles</option>
+                            <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                            <option value="Nevis">Nevis</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau Island">Palau Island</option>
+                            <option value="Palestine">Palestine</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Phillipines">Philippines</option>
+                            <option value="Pitcairn Island">Pitcairn Island</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Republic of Montenegro">Republic of Montenegro</option>
+                            <option value="Republic of Serbia">Republic of Serbia</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="St Barthelemy">St Barthelemy</option>
+                            <option value="St Eustatius">St Eustatius</option>
+                            <option value="St Helena">St Helena</option>
+                            <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                            <option value="St Lucia">St Lucia</option>
+                            <option value="St Maarten">St Maarten</option>
+                            <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                            <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                            <option value="Saipan">Saipan</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="Samoa American">Samoa American</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tahiti">Tahiti</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Erimates">United Arab Emirates</option>
+                            <option value="United States of America">United States of America</option>
+                            <option value="Uraguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Vatican City State">Vatican City State</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                            <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                            <option value="Wake Island">Wake Island</option>
+                            <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zaire">Zaire</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                         </select>
+                    </td>
+                </tr>
+
+                <tr class="ZIP">
+                    <td></td>
+                    <td>
+                        <label for="zipid">Zip</label>
+                    </td>
+                    <td>
+                        <input type="text" id="zipid" name="zip">
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle1">
+                <tr class="other">
+                    <td>
+                        <input type="checkbox" name="otheraddress" id="otherid">   
+                    </td>
+                    <td>
+                        <p>	10. If you desire to update your other address, give required details & <span>
+                        Submit proof of other address also.</span></p>
+                    </td>
+
+                </tr>
+            </table>
+
+            <table class="tablestyle3">
+                <tr class="telephone">
+                    <td>
+                        <input type="checkbox" name="telephone" id="telephoneid">  
+                    </td>
+                    <td>
+                        <p>11. Telephone No.</p>
+                        <span>(Country code is compulsory)</span>
+                    </td>
+                    <td>
+                        <table class="innertable1">
+                            <tr class="countrycode">
+                                <td>
+                                    <label for="concodeid">Country code (ISD code)</label>
+                                    <select name="countryCode" id="concodeid">
+                                        <option>-- Please select --</option>
+                                        <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+                                        <option data-countryCode="AD" value="376">Andorra (+376)</option>
+                                        <option data-countryCode="AO" value="244">Angola (+244)</option>
+                                        <option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+                                        <option data-countryCode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+                                        <option data-countryCode="AR" value="54">Argentina (+54)</option>
+                                        <option data-countryCode="AM" value="374">Armenia (+374)</option>
+                                        <option data-countryCode="AW" value="297">Aruba (+297)</option>
+                                        <option data-countryCode="AU" value="61">Australia (+61)</option>
+                                        <option data-countryCode="AT" value="43">Austria (+43)</option>
+                                        <option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+                                        <option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+                                        <option data-countryCode="BH" value="973">Bahrain (+973)</option>
+                                        <option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+                                        <option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+                                        <option data-countryCode="BY" value="375">Belarus (+375)</option>
+                                        <option data-countryCode="BE" value="32">Belgium (+32)</option>
+                                        <option data-countryCode="BZ" value="501">Belize (+501)</option>
+                                        <option data-countryCode="BJ" value="229">Benin (+229)</option>
+                                        <option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+                                        <option data-countryCode="BT" value="975">Bhutan (+975)</option>
+                                        <option data-countryCode="BO" value="591">Bolivia (+591)</option>
+                                        <option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)</option>
+                                        <option data-countryCode="BW" value="267">Botswana (+267)</option>
+                                        <option data-countryCode="BR" value="55">Brazil (+55)</option>
+                                        <option data-countryCode="BN" value="673">Brunei (+673)</option>
+                                        <option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+                                        <option data-countryCode="BF" value="226">Burkina Faso (+226)</option>
+                                        <option data-countryCode="BI" value="257">Burundi (+257)</option>
+                                        <option data-countryCode="KH" value="855">Cambodia (+855)</option>
+                                        <option data-countryCode="CM" value="237">Cameroon (+237)</option>
+                                        <option data-countryCode="CA" value="1">Canada (+1)</option>
+                                        <option data-countryCode="CV" value="238">Cape Verde Islands (+238)</option>
+                                        <option data-countryCode="KY" value="1345">Cayman Islands (+1345)</option>
+                                        <option data-countryCode="CF" value="236">Central African Republic (+236)</option>
+                                        <option data-countryCode="CL" value="56">Chile (+56)</option>
+                                        <option data-countryCode="CN" value="86">China (+86)</option>
+                                        <option data-countryCode="CO" value="57">Colombia (+57)</option>
+                                        <option data-countryCode="KM" value="269">Comoros (+269)</option>
+                                        <option data-countryCode="CG" value="242">Congo (+242)</option>
+                                        <option data-countryCode="CK" value="682">Cook Islands (+682)</option>
+                                        <option data-countryCode="CR" value="506">Costa Rica (+506)</option>
+                                        <option data-countryCode="HR" value="385">Croatia (+385)</option>
+                                        <option data-countryCode="CU" value="53">Cuba (+53)</option>
+                                        <option data-countryCode="CY" value="90392">Cyprus North (+90392)</option>
+                                        <option data-countryCode="CY" value="357">Cyprus South (+357)</option>
+                                        <option data-countryCode="CZ" value="42">Czech Republic (+42)</option>
+                                        <option data-countryCode="DK" value="45">Denmark (+45)</option>
+                                        <option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+                                        <option data-countryCode="DM" value="1809">Dominica (+1809)</option>
+                                        <option data-countryCode="DO" value="1809">Dominican Republic (+1809)</option>
+                                        <option data-countryCode="EC" value="593">Ecuador (+593)</option>
+                                        <option data-countryCode="EG" value="20">Egypt (+20)</option>
+                                        <option data-countryCode="SV" value="503">El Salvador (+503)</option>
+                                        <option data-countryCode="GQ" value="240">Equatorial Guinea (+240)</option>
+                                        <option data-countryCode="ER" value="291">Eritrea (+291)</option>
+                                        <option data-countryCode="EE" value="372">Estonia (+372)</option>
+                                        <option data-countryCode="ET" value="251">Ethiopia (+251)</option>
+                                        <option data-countryCode="FK" value="500">Falkland Islands (+500)</option>
+                                        <option data-countryCode="FO" value="298">Faroe Islands (+298)</option>
+                                        <option data-countryCode="FJ" value="679">Fiji (+679)</option>
+                                        <option data-countryCode="FI" value="358">Finland (+358)</option>
+                                        <option data-countryCode="FR" value="33">France (+33)</option>
+                                        <option data-countryCode="GF" value="594">French Guiana (+594)</option>
+                                        <option data-countryCode="PF" value="689">French Polynesia (+689)</option>
+                                        <option data-countryCode="GA" value="241">Gabon (+241)</option>
+                                        <option data-countryCode="GM" value="220">Gambia (+220)</option>
+                                        <option data-countryCode="GE" value="7880">Georgia (+7880)</option>
+                                        <option data-countryCode="DE" value="49">Germany (+49)</option>
+                                        <option data-countryCode="GH" value="233">Ghana (+233)</option>
+                                        <option data-countryCode="GI" value="350">Gibraltar (+350)</option>
+                                        <option data-countryCode="GR" value="30">Greece (+30)</option>
+                                        <option data-countryCode="GL" value="299">Greenland (+299)</option>
+                                        <option data-countryCode="GD" value="1473">Grenada (+1473)</option>
+                                        <option data-countryCode="GP" value="590">Guadeloupe (+590)</option>
+                                        <option data-countryCode="GU" value="671">Guam (+671)</option>
+                                        <option data-countryCode="GT" value="502">Guatemala (+502)</option>
+                                        <option data-countryCode="GN" value="224">Guinea (+224)</option>
+                                        <option data-countryCode="GW" value="245">Guinea - Bissau (+245)</option>
+                                        <option data-countryCode="GY" value="592">Guyana (+592)</option>
+                                        <option data-countryCode="HT" value="509">Haiti (+509)</option>
+                                        <option data-countryCode="HN" value="504">Honduras (+504)</option>
+                                        <option data-countryCode="HK" value="852">Hong Kong (+852)</option>
+                                        <option data-countryCode="HU" value="36">Hungary (+36)</option>
+                                        <option data-countryCode="IS" value="354">Iceland (+354)</option>
+                                        <option data-countryCode="IN" value="91">India (+91)</option>
+                                        <option data-countryCode="ID" value="62">Indonesia (+62)</option>
+                                        <option data-countryCode="IR" value="98">Iran (+98)</option>
+                                        <option data-countryCode="IQ" value="964">Iraq (+964)</option>
+                                        <option data-countryCode="IE" value="353">Ireland (+353)</option>
+                                        <option data-countryCode="IL" value="972">Israel (+972)</option>
+                                        <option data-countryCode="IT" value="39">Italy (+39)</option>
+                                        <option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
+                                        <option data-countryCode="JP" value="81">Japan (+81)</option>
+                                        <option data-countryCode="JO" value="962">Jordan (+962)</option>
+                                        <option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
+                                        <option data-countryCode="KE" value="254">Kenya (+254)</option>
+                                        <option data-countryCode="KI" value="686">Kiribati (+686)</option>
+                                        <option data-countryCode="KP" value="850">Korea North (+850)</option>
+                                        <option data-countryCode="KR" value="82">Korea South (+82)</option>
+                                        <option data-countryCode="KW" value="965">Kuwait (+965)</option>
+                                        <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
+                                        <option data-countryCode="LA" value="856">Laos (+856)</option>
+                                        <option data-countryCode="LV" value="371">Latvia (+371)</option>
+                                        <option data-countryCode="LB" value="961">Lebanon (+961)</option>
+                                        <option data-countryCode="LS" value="266">Lesotho (+266)</option>
+                                        <option data-countryCode="LR" value="231">Liberia (+231)</option>
+                                        <option data-countryCode="LY" value="218">Libya (+218)</option>
+                                        <option data-countryCode="LI" value="417">Liechtenstein (+417)</option>
+                                        <option data-countryCode="LT" value="370">Lithuania (+370)</option>
+                                        <option data-countryCode="LU" value="352">Luxembourg (+352)</option>
+                                        <option data-countryCode="MO" value="853">Macao (+853)</option>
+                                        <option data-countryCode="MK" value="389">Macedonia (+389)</option>
+                                        <option data-countryCode="MG" value="261">Madagascar (+261)</option>
+                                        <option data-countryCode="MW" value="265">Malawi (+265)</option>
+                                        <option data-countryCode="MY" value="60">Malaysia (+60)</option>
+                                        <option data-countryCode="MV" value="960">Maldives (+960)</option>
+                                        <option data-countryCode="ML" value="223">Mali (+223)</option>
+                                        <option data-countryCode="MT" value="356">Malta (+356)</option>
+                                        <option data-countryCode="MH" value="692">Marshall Islands (+692)</option>
+                                        <option data-countryCode="MQ" value="596">Martinique (+596)</option>
+                                        <option data-countryCode="MR" value="222">Mauritania (+222)</option>
+                                        <option data-countryCode="YT" value="269">Mayotte (+269)</option>
+                                        <option data-countryCode="MX" value="52">Mexico (+52)</option>
+                                        <option data-countryCode="FM" value="691">Micronesia (+691)</option>
+                                        <option data-countryCode="MD" value="373">Moldova (+373)</option>
+                                        <option data-countryCode="MC" value="377">Monaco (+377)</option>
+                                        <option data-countryCode="MN" value="976">Mongolia (+976)</option>
+                                        <option data-countryCode="MS" value="1664">Montserrat (+1664)</option>
+                                        <option data-countryCode="MA" value="212">Morocco (+212)</option>
+                                        <option data-countryCode="MZ" value="258">Mozambique (+258)</option>
+                                        <option data-countryCode="MN" value="95">Myanmar (+95)</option>
+                                        <option data-countryCode="NA" value="264">Namibia (+264)</option>
+                                        <option data-countryCode="NR" value="674">Nauru (+674)</option>
+                                        <option data-countryCode="NP" value="977">Nepal (+977)</option>
+                                        <option data-countryCode="NL" value="31">Netherlands (+31)</option>
+                                        <option data-countryCode="NC" value="687">New Caledonia (+687)</option>
+                                        <option data-countryCode="NZ" value="64">New Zealand (+64)</option>
+                                        <option data-countryCode="NI" value="505">Nicaragua (+505)</option>
+                                        <option data-countryCode="NE" value="227">Niger (+227)</option>
+                                        <option data-countryCode="NG" value="234">Nigeria (+234)</option>
+                                        <option data-countryCode="NU" value="683">Niue (+683)</option>
+                                        <option data-countryCode="NF" value="672">Norfolk Islands (+672)</option>
+                                        <option data-countryCode="NP" value="670">Northern Marianas (+670)</option>
+                                        <option data-countryCode="NO" value="47">Norway (+47)</option>
+                                        <option data-countryCode="OM" value="968">Oman (+968)</option>
+                                        <option data-countryCode="PW" value="680">Palau (+680)</option>
+                                        <option data-countryCode="PA" value="507">Panama (+507)</option>
+                                        <option data-countryCode="PG" value="675">Papua New Guinea (+675)</option>
+                                        <option data-countryCode="PY" value="595">Paraguay (+595)</option>
+                                        <option data-countryCode="PE" value="51">Peru (+51)</option>
+                                        <option data-countryCode="PH" value="63">Philippines (+63)</option>
+                                        <option data-countryCode="PL" value="48">Poland (+48)</option>
+                                        <option data-countryCode="PT" value="351">Portugal (+351)</option>
+                                        <option data-countryCode="PR" value="1787">Puerto Rico (+1787)</option>
+                                        <option data-countryCode="QA" value="974">Qatar (+974)</option>
+                                        <option data-countryCode="RE" value="262">Reunion (+262)</option>
+                                        <option data-countryCode="RO" value="40">Romania (+40)</option>
+                                        <option data-countryCode="RU" value="7">Russia (+7)</option>
+                                        <option data-countryCode="RW" value="250">Rwanda (+250)</option>
+                                        <option data-countryCode="SM" value="378">San Marino (+378)</option>
+                                        <option data-countryCode="ST" value="239">Sao Tome &amp; Principe (+239)</option>
+                                        <option data-countryCode="SA" value="966">Saudi Arabia (+966)</option>
+                                        <option data-countryCode="SN" value="221">Senegal (+221)</option>
+                                        <option data-countryCode="CS" value="381">Serbia (+381)</option>
+                                        <option data-countryCode="SC" value="248">Seychelles (+248)</option>
+                                        <option data-countryCode="SL" value="232">Sierra Leone (+232)</option>
+                                        <option data-countryCode="SG" value="65">Singapore (+65)</option>
+                                        <option data-countryCode="SK" value="421">Slovak Republic (+421)</option>
+                                        <option data-countryCode="SI" value="386">Slovenia (+386)</option>
+                                        <option data-countryCode="SB" value="677">Solomon Islands (+677)</option>
+                                        <option data-countryCode="SO" value="252">Somalia (+252)</option>
+                                        <option data-countryCode="ZA" value="27">South Africa (+27)</option>
+                                        <option data-countryCode="ES" value="34">Spain (+34)</option>
+                                        <option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
+                                        <option data-countryCode="SH" value="290">St. Helena (+290)</option>
+                                        <option data-countryCode="KN" value="1869">St. Kitts (+1869)</option>
+                                        <option data-countryCode="SC" value="1758">St. Lucia (+1758)</option>
+                                        <option data-countryCode="SD" value="249">Sudan (+249)</option>
+                                        <option data-countryCode="SR" value="597">Suriname (+597)</option>
+                                        <option data-countryCode="SZ" value="268">Swaziland (+268)</option>
+                                        <option data-countryCode="SE" value="46">Sweden (+46)</option>
+                                        <option data-countryCode="CH" value="41">Switzerland (+41)</option>
+                                        <option data-countryCode="SI" value="963">Syria (+963)</option>
+                                        <option data-countryCode="TW" value="886">Taiwan (+886)</option>
+                                        <option data-countryCode="TJ" value="7">Tajikstan (+7)</option>
+                                        <option data-countryCode="TH" value="66">Thailand (+66)</option>
+                                        <option data-countryCode="TG" value="228">Togo (+228)</option>
+                                        <option data-countryCode="TO" value="676">Tonga (+676)</option>
+                                        <option data-countryCode="TT" value="1868">Trinidad &amp; Tobago (+1868)</option>
+                                        <option data-countryCode="TN" value="216">Tunisia (+216)</option>
+                                        <option data-countryCode="TR" value="90">Turkey (+90)</option>
+                                        <option data-countryCode="TM" value="7">Turkmenistan (+7)</option>
+                                        <option data-countryCode="TM" value="993">Turkmenistan (+993)</option>
+                                        <option data-countryCode="TC" value="1649">Turks &amp; Caicos Islands (+1649)</option>
+                                        <option data-countryCode="TV" value="688">Tuvalu (+688)</option>
+                                        <option data-countryCode="UG" value="256">Uganda (+256)</option>
+                                        <option data-countryCode="GB" value="44">UK (+44)</option>
+                                        <option data-countryCode="UA" value="380">Ukraine (+380)</option>
+                                        <option data-countryCode="AE" value="971">United Arab Emirates (+971)</option>
+                                        <option data-countryCode="UY" value="598">Uruguay (+598)</option>
+                                        <option data-countryCode="US" value="1">USA (+1)</option>
+                                        <option data-countryCode="UZ" value="7">Uzbekistan (+7)</option>
+                                        <option data-countryCode="VU" value="678">Vanuatu (+678)</option>
+                                        <option data-countryCode="VA" value="379">Vatican City (+379)</option>
+                                        <option data-countryCode="VE" value="58">Venezuela (+58)</option>
+                                        <option data-countryCode="VN" value="84">Vietnam (+84)</option>
+                                        <option data-countryCode="VG" value="84">Virgin Islands - British (+1284)</option>
+                                        <option data-countryCode="VI" value="84">Virgin Islands - US (+1340)</option>
+                                        <option data-countryCode="WF" value="681">Wallis &amp; Futuna (+681)</option>
+                                        <option data-countryCode="YE" value="969">Yemen (North)(+969)</option>
+                                        <option data-countryCode="YE" value="967">Yemen (South)(+967)</option>
+                                        <option data-countryCode="ZM" value="260">Zambia (+260)</option>
+                                        <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
+                                </select>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="innertable2">
+                            <tr>
+                                <td>
+                                    <input type="radio" id="mobileid" name="teleno" value="mobile">
+                                    <label for="mobileid">Mobile No.</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="teleid" name="teleno" value="tele">
+                                    <label for="teleid">Telephone No.</label>
+                                </td>
+                            </tr>
+
+                            <tr class="innertele">
+                                <td>
+                                    <div class="areacode">
+                                        <label for="areaid">Area/STD Code</label>
+                                        <input type="text" id="areaid" name="area"> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="mobile">
+                                        <label for="mobid">Telephone No./Mobile No.</label>
+                                        <input type="text" id="mobid" name="mob"> 
+                                    </div>
+                                </td>  
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="email">
+                    <td></td>
+                    <td>
+                        <label for="emailid">E-mail ID</label>
+                    </td>
+                    <td>
+                        <input type="text" id="emailid" name="email">
+                    </td>
+                </tr>
+
+                <tr class="incase">
+                    <td></td>
+                    <td>
+                        <p>In case of a citizen of India, then</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="aadhaarid" name="incase">
+                        <label for="aadhaarid">AADHAAR</label>
+                        <input type="radio" id="eidid" name="incase">
+                        <label for="eidid">EID</label>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle2">
+                <tr class="aadno">
+                    <td><input type="checkbox" id="aad" name="aadhaar"></td>
+                    <td>
+                        <label for="aadid">12. AADHAAR number :</label>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="text" id="aadid" name="aad">
+                            <p>In case AADHAAR number is provided,</p>
+                            <p>then proof of AADHAAR along with supporting documents is to be submitted to NSDL</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="nameaad">
+                    <td></td>
+                    <td>
+                        <label for="nameaadid">
+                            <p>Name as per AADHAAR letter</p>
+                            <p>or</p>
+                            <p>as per the enrollment ID of Aadhaar application form</p>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" id="nameaadid" name="aadhar">
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle3">
+                <tr class="gst">
+                    <td></td>
+                    <td class="gstn">
+                        <label for="gstnid">13. GSTN</label>
+                    </td>
+                    <td>
+                        <input type="text" id="gstnid" name="gstn">
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle1">
+                <tr class="mention">
+                    <td>
+                        <input type="checkbox" id="mentionpan" class="pan">
+                    </td>
+                    <td>
+                        <span>14. Mention other Permanent Account Numbers (PANs) if any,inadvertently allotted to you.</span>
+                        <span>Submit proof of surrendered PAN(s) along with the application.</span>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle3">
+                <tr class="panno">
+                    <td></td>
+                    <td>
+                        <label for="pan1id">PAN1</label>
+                        <input type="text" id="pan1id" name="pan">
+                    </td>
+                    <td>
+                        <label for="pan2id">PAN2</label>
+                        <input type="text" id="pan2id" name="pan">
+                    </td>
+                </tr>
+
+                <tr class="panno">
+                    <td></td>
+                    <td>
+                        <label for="pan3id">PAN3</label>
+                        <input type="text" id="pan3id" name="pan">
+                    </td>
+                    <td>
+                        <label for="pan4id">PAN4</label>
+                        <input type="text" id="pan4id" name="pan">
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle1">
+                <tr class="verification">
+                    <td></td>
+                    <td>
+                        <span>15. Verification</span>
+                    </td>
+                </tr>
+
+                <tr class="ver">
+                    <td></td>
+                    <td>
+                        <span>I/We</span>
+                        <input type="text" name="name">
+                        <span>,the applicant,in the capacity of</span>
+                        <select name="capacity">
+                            <option value="select">-- Please Select --</option>
+                            <option value="Himself/Herself">Himself/Herself</option>
+                            <option value="rep">Representative Assessee</option>
+                        </select>
+                        <span>do hereby declare that what is stated above is true to the best of my information and belief. I have enclosed</span>
+                        <input type="text" name="docs">
+                        <span>(number of documents) in support of proposed changes/corrections.</span>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle4">
+                <tr class="place">
+                    <td></td>
+                    <td>
+                        <label for="placeid">Place</label>
+                        <input type="text" id="placeid">
+                    </td>
+                </tr>
+            </table>
+
+            <table class="tablestyle1">
+                <tr class="verat">
+                    <td></td>
+                    <td>
+                        <div>
+                            <p>Verified today, the</p>
+                        </div>
+                        <div>
+                            <p>DD MM YYYY</p>
+                            <p>02 -01 -2021</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="enclosed">
+                    <td></td>
+                    <td>
+                        <span>I/We have enclosed</span>
+                        <select name="details1">
+                            <option value="-- Please Select --">-- Please Select --</option>
+                            <option value="pass">Copy of passport</option>
+                            <option value="pers">Copy of Person of Indian Origin card issued by Government of India</option>
+                            <option value="over">Copy of Overseas Citizenship of India card issued by Government of India</option>
+                            <option value="natid">Copy of National ID/Citizenship ID/Taxpayer ID attested by Indian Embassy/Consulate/High Commission/Apostille/authorised officials of overseas branches of Scheduled Banks registered in India</option>
+                        </select>
+                        <span>as proof of identity,</span>
+                        <select name="details2">
+                            <option value="1">-- Please select --</option>
+                            <option value="2">Copy of passport</option>
+                            <option value="3">Copy of Bank account statement in the country of residence</option>
+                            <option value="4">Copy of certificate of residence in India or Residential permit issued by the State Police Authority</option>
+                            <option value="5">Copy of the registration certificate issued by the Foreigner's Registration Office showing Indian address</option>
+                            <option value="6">Copy of Person of Indian Origin card issued by Government of India</option>
+                            <option value="7">Copy of Non-resident External bank account statement in India</option>
+                            <option value="8">Copy of Visa granted and copy of appointment letter or contract from Indian Company and Certificate (in original) of Indian Address issued by the employer</option>
+                            <option value="9">Copy of Overseas Citizen of India card issued by Government of India</option>
+                        </select>
+                        <span>as proof of address,</span>
+                        <select name="details3">
+                            <option value="">-- Please select --</option>
+                            <option value="1">Copy of Birth certificate issued by the Municipal Authority or any office authorised to issue Birth and Death Certificate by the Registrar of Birth and Deaths or the Indian Consulate</option>
+                            <option value="2">Copy of Pension payment order</option>
+                            <option value="3">Copy of Marriage certificate issued by Registrar of Marriages</option>
+                            <option value="4">Copy of Matriculation certificate</option>
+                            <option value="5">Copy of Passport</option>
+                            <option value="6">Copy of Driving licence</option>
+                            <option value="7">Copy of Domicile certificate issued by the Government</option>
+                            <option value="8">Copy of Affidavit sworn before a magistrate stating the date of birth</option>
+                            <option value="9">Copy of Elector�s photo identity card</option>
+                            <option value="10">Copy of Aadhaar Card issued by the Unique Identification Authority of India</option>
+                            <option value="11">Copy of Central Government Health Service Scheme Card</option>
+                            <option value="12">Copy of Ex-Servicemen Contributory Health Scheme photo card</option>
+                            <option value="13">Copy of Photo identity card issued by the Central Government or State Government or Public Sector Undertaking</option>
+                            <option value="14">Copy of Mark sheet of recognised board</option>
+                        </select>
+                        <span>as proof of date of birth and</span>
+                        <select name="details4">
+                            <option value="">--Please Select--</option>
+                            <option value="1"> Copy of PAN card</option>
+                            <option value="2"> Copy of PAN allotment letter</option>
+                            <option value="3"> No document</option>
+                        </select>
+                        <span>as proof of PAN allotted.</span>
+                    </td>
+                </tr>
+                <tr class="epan">
+                    <td></td>
+                    <td>
+                        <fieldset>
+                            <legend>Whether you wish to have?</legend>
+                            <input type="radio" id="phyid" name="pan" checked>
+                            <label for="phyid">Physical PAN Card & e-PAN Card</label>
+                            <input type="radio" id="epanid" name="pan">
+                            <label for="epanid">Physical PAN Card & e-PAN Card</label>
+                        </fieldset>
+                        <span>Fees Applicable</span>
+                    </td>
+                </tr>
+
+                <tr class="otherdet">
+                    <td></td>
+                    <td>
+                        <span>Other Details</span>
+                    </td>
+                </tr>
+
+                <tr class="deposit">
+                    <td></td>
+                    <td>
+                        <span>1. Depository Account Details</span>
+                    </td>
+                </tr>
+
+                <tr class="depositdet">
+                    <td></td>
+                    <td>
+                        <label for="dpid">DP ID:</label>
+                        <input type="text" id="dpid" name="dp">
+                        <label for="clientid">Client ID:</label>
+                        <input type="text" id="dpid" name="dp">
+                    </td>
+                </tr>
+
+                <tr class="paydet">
+                    <td></td>
+                    <td>
+                        <span>2. Payment Details</span>
+                    </td>
+                </tr>
+
+                <tr class="onlinepay">
+                    <td>
+                        <input type="radio" id="onlineid">
+                    </td>
+                    <td>
+                        <label for="onlineid">Online Payment</label>
+                    </td>
+                </tr>
+            </table>
+
+            <fieldset class="paperless">
+                <legend>For Paperless PAN Application:</legend>
+                <input type="radio" id="paperlessid" name="paperless" checked>
+                <label for="paperlessid">Yes</label>                <input type="radio" id="paperid" name="paperless">
+                <label for="paperid">No</label>
+            </fieldset>
+
+            <div class="dsc">
+                <input type="radio" name="dsc" id="dscid" checked>
+                <label for="dscid">DSC</label>
+                <select name="dsc">
+                    <option value="0">--Select--</option>
+                    <option value="1">Minor</option>
+                    <option value="2">Lunatic/Idiot</option>
+                    <option value="3">Self</option>
+                </select>
+                <a href="https://tin.tin.nsdl.com/pan/InstructionDSC.html" target="_blank">Guidelines for DSC user</a> 
+            </div>
+
+            <table class="table5">
+                <tr>
+                   <td>
+                        <p>Upload Photo</p>
+                   </td> 
+                   <td>
+                        <input type="file" id="myFile1" name="filename">
+                   </td>
+                   <td>
+                        <p>Upload Signature</p>
+                   </td>
+                   <td>
+                        <input type="file" id="myFile3" name="filename">
+                   </td>
+                   <td>
+
+                   </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Upload Document</p>
+                    </td> 
+                    <td>
+                        <input type="file" id="myFile2" name="filename">
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <p>OR</p>
+                    </td>
+                 </tr>
+            </table>
+            <button id="digilocker" name="filename">Fetch from DigiLocker</button>
+
+            <div class="finupload">
+                <div class="innerupload">
+                    <span><label for="photoupid">ALREADY UPLOADED PHOTO</label></span>
+                    <input type="text" id="photoupid" name="photo">
+                </div>
+                <div class="innerupload">
+                    <span><label for="signupid">ALREADY UPLOADED SIGNATURE</label></span>
+                    <input type="text" id="signupid" name="sign">
+                </div>
+                <div class="innerupload">
+                    <span><label for="updocsid">ALREADY UPLOADED DOCUMENTS</label></span>
+                    <textarea name="updocs" id="updocsid" cols="40" rows="5"></textarea>
+                </div>
+            </div>
+
+            <input type="Submit">
+            
+     </form> 
+     
+    </main>
+    <hr>  
+
+</body>
+</html>
